@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QueueVisualisation">
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/clear_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_enqueue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_enqueue" />
+
+    <Button
+        android:id="@+id/button_peek"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="112dp"
+        android:text="@string/peek_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_enqueue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_enqueue" />
+
+    <TextView
+        android:id="@+id/val1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/val2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/val2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/val3"
+        app:layout_constraintEnd_toStartOf="@+id/val3"
+        app:layout_constraintStart_toEndOf="@+id/val1" />
+
+    <TextView
+        android:id="@+id/val3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/val4"
+        app:layout_constraintStart_toEndOf="@+id/val2" />
+
+    <TextView
+        android:id="@+id/val4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/val5"
+        app:layout_constraintStart_toEndOf="@+id/val3" />
+
+    <TextView
+        android:id="@+id/val5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/val4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <EditText
+        android:id="@+id/editValue"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="@string/edit_value"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_enqueue"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_enqueue"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/enqueue_button"
+        app:layout_constraintBottom_toTopOf="@+id/button_dequeue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toEndOf="@+id/editValue"
+        app:layout_constraintTop_toBottomOf="@+id/val5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_dequeue"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="168dp"
+        android:text="@string/dequeue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_enqueue"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button_enqueue" />
+
+    <TextView
+        android:id="@+id/textRear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFront" />
+
+    <TextView
+        android:id="@+id/textFront"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textRear"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSize"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRear" />
+
+    <TextView
+        android:id="@+id/labelFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/text_front"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textFront"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelRear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/text_rear"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textRear"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textSize"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/label0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/text_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/val1" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="9dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/text_1"
+        app:layout_constraintBottom_toBottomOf="@+id/label0"
+        app:layout_constraintEnd_toStartOf="@+id/label2"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toEndOf="@+id/label0"
+        app:layout_constraintTop_toBottomOf="@+id/val2" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/text_2"
+        app:layout_constraintBottom_toBottomOf="@+id/label1"
+        app:layout_constraintEnd_toStartOf="@+id/label3"
+        app:layout_constraintTop_toBottomOf="@+id/val3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/text_3"
+        app:layout_constraintBottom_toBottomOf="@+id/label2"
+        app:layout_constraintEnd_toStartOf="@+id/label4"
+        app:layout_constraintTop_toBottomOf="@+id/val4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:text="@string/text_4"
+        app:layout_constraintBottom_toBottomOf="@+id/label3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/val5"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

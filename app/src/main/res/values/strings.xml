@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DataStructureVisualisation</string>
+    <string name="stack_title">Stack</string>
+    <string name="array_list_title">Array List</string>
+    <string name="queue_title">Queue </string>
+    <string name="select_data_structure">Please select a data structure:</string>
+    <string name="stack_button">Stack</string>
+    <string name="queue_button">Queue</string>
+    <string name="array_list_button">Array List</string>
+    <string name="enqueue_button">Enqueue</string>
+    <string name="dequeue_button">Dequeue</string>
+    <string name="text_front">Front:</string>
+    <string name="text_rear">Rear:</string>
+    <string name="text_size">Size:</string>
+    <string name="peek_button">Peek</string>
+    <string name="clear_button">Clear</string>
+    <string name="text_0">0</string>
+    <string name="text_1">1</string>
+    <string name="text_2">2</string>
+    <string name="text_3">3</string>
+    <string name="text_4">4</string>
+    <string name="enter_value">Enter a value</string>
+    <string name="push_button">Push</string>
+    <string name="pop_button">Pop</string>
+    <string name="text_top">Top:</string>
+    <string name="add_button">Add</string>
+    <string name="remove_button">Remove</string>
+    <string name="set_button">Set</string>
+    <string name="size_button">Size</string>
+    <string name="get_button">Get</string>
+    <string name="edit_value">Enter a value</string>
+    <string name="edit_index">Enter index</string>
+
+
+
+</resources>

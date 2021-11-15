@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/val1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/val2"
+        app:layout_constraintEnd_toStartOf="@+id/val2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/val2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/val2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/val3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <TextView
+        android:id="@+id/val3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/val2"
+        app:layout_constraintEnd_toStartOf="@+id/val4"
+        app:layout_constraintTop_toTopOf="@+id/val2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/val4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="@+id/val3"
+        app:layout_constraintEnd_toStartOf="@+id/val5"
+        app:layout_constraintTop_toTopOf="@+id/val3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/val5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="@+id/val4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/val4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/set_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_remove"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_remove"
+        app:layout_constraintTop_toBottomOf="@+id/button_remove"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/add_button"
+        app:layout_constraintEnd_toStartOf="@+id/button_remove"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/val2" />
+
+    <Button
+        android:id="@+id/button_size_array"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/size_button"
+        app:layout_constraintBottom_toBottomOf="@+id/button_set"
+        app:layout_constraintEnd_toEndOf="@+id/button_clear_array"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/clear"
+        app:layout_constraintTop_toTopOf="@+id/button_set" />
+
+    <Button
+        android:id="@+id/button_get"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/get_button"
+        app:layout_constraintBottom_toBottomOf="@+id/button_set"
+        app:layout_constraintEnd_toEndOf="@+id/button_add"
+        app:layout_constraintStart_toStartOf="@+id/button_add" />
+
+    <Button
+        android:id="@+id/button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:text="@string/remove_button"
+        app:layout_constraintBottom_toBottomOf="@+id/button_add"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editIndex"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edit_index"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/editValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editValue" />
+
+    <EditText
+        android:id="@+id/editValue"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edit_value"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button_remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/editIndex"
+        app:layout_constraintTop_toBottomOf="@+id/val4"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/val6"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/val7"
+        app:layout_constraintStart_toStartOf="@+id/val1"
+        app:layout_constraintTop_toTopOf="@+id/val7"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/val7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/val6"
+        app:layout_constraintTop_toTopOf="@+id/val8" />
+
+    <TextView
+        android:id="@+id/val8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/val9"
+        app:layout_constraintStart_toEndOf="@+id/val7"
+        app:layout_constraintTop_toTopOf="@+id/val9" />
+
+    <TextView
+        android:id="@+id/val9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/editValue"
+        app:layout_constraintEnd_toEndOf="@+id/val4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/val3"
+        app:layout_constraintTop_toBottomOf="@+id/val4" />
+
+    <TextView
+        android:id="@+id/val10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/val9"
+        app:layout_constraintEnd_toEndOf="@+id/val5"
+        app:layout_constraintStart_toEndOf="@+id/val9"
+        app:layout_constraintTop_toTopOf="@+id/val9" />
+
+    <Button
+        android:id="@+id/button_clear_array"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/clear_button"
+        app:layout_constraintBottom_toBottomOf="@+id/button_remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_remove"
+        app:layout_constraintTop_toTopOf="@+id/button_remove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
